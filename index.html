@@ -1,6 +1,70 @@
 <!DOCTYPE html>
-<html>
-  <body>
-    <h1>My Website is Working!</h1>
-  </body>
+<html lang="en">
+<head>
+  <!-- Meta + Preloads -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+  <!-- Animated Header -->
+  <header data-aos="fade-down">
+    <div class="logo-hologram">
+      <img src="assets/logo-3d.png" alt="CreateWhatsAppStatus">
+    </div>
+    <nav class="glass-nav">
+      <a href="#" class="active-tab">Creator</a>
+      <a href="templates.html">Templates</a>
+      <a href="pro.html">Go Pro</a>
+    </nav>
+  </header>
+
+  <!-- AI Editor -->
+  <main class="editor-container">
+    <div class="prompt-box" data-aos="zoom-in">
+      <div class="language-pill">
+        <span class="fi fi-in"></span>
+        <select id="language-select">
+          <option value="hi">Hindi</option>
+          <!-- 24 more options -->
+        </select>
+      </div>
+      <textarea placeholder="Type/Paste or say 🔊 'Funny status about cats'"></textarea>
+      <div class="style-toggles">
+        <button class="style-option" data-style="minimal"></button>
+        <button class="style-option" data-style="gradient"></button>
+        <!-- 8 style choices -->
+      </div>
+    </div>
+
+    <div class="preview-pane" data-aos="fade-left">
+      <div class="whatsapp-mockup">
+        <!-- Dynamic preview -->
+      </div>
+      <button class="download-btn pulse">
+        <svg><!-- Download icon --></svg>
+        Download HD
+      </button>
+    </div>
+  </main>
+
+  <!-- 3D Footer -->
+  <footer class="holographic-footer">
+    <div class="legal-links">
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <!-- All legal links -->
+    </div>
+    <div class="social-proof">
+      <div class="testimonial-carousel">
+        <!-- User testimonials -->
+      </div>
+    </div>
+  </footer>
+
+  <!-- Libraries -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800 });
+  </script>
+</body>
 </html>
